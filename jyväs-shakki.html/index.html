@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jyväskylän Shakki</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Päävalikko">
+      <a href="historia.html">Historia</a>
+      <a href="kerhot.html">Kerhotoiminta</a>
+      <a href="uutiset.html">Uutiset</a>
+      <a href="turnaukset.html">Turnaukset</a>
+      <a href="yhteystiedot.html">Yhteystiedot</a>
+    </nav>
+
+    <button class="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Avaa valikko">
+      ☰
+    </button>
+    <div id="mobileMenu" hidden>
+      <div class="wrap mobile__inner">
+        <a href="historia.html">Historia</a>
+        <a href="kerhot.html">Kerhotoiminta</a>
+        <a href="uutiset.html">Uutiset</a>
+        <a href="turnaukset.html">Turnaukset</a>
+        <a href="yhteystiedot.html">Yhteystiedot</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Tervetuloa">
+      <div class="wrap">
+        <h1>Jyväskylän Shakki</h1>
+        <p>Jyväskylän vanhin ja aktiivisin shakkikerho</p>
+        <p class="hero__sub">Perustettu 1900‑luvulla – kilpailuja, kerhotoimintaa ja shakkikulttuuria jo vuosikymmeniä.</p>
+        <div class="hero__meta" role="list">
+          <div role="listitem">
+            <strong>Kerhoillat</strong><br />
+            Ti 18:00–20:00 (esim.)
+          </div>
+          <div role="listitem">
+            <strong>Seuraava turnaus</strong><br />
+            La 20.1. (esim.)
+          </div>
+          <div role="listitem">
+            <strong>Uusin tiedote</strong><br />
+            Jäsenmaksut 2026 (esim.)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AJANKOHTAISTA -->
+    <section id="ajankohtaista" class="section">
+      <div class="wrap">
+        <div class="sectionHead">
+          <h2>Ajankohtaista</h2>
+          <p>Nopeat nostot tärkeimpiin asioihin. Tässä luonnoksessa tekstit ovat esimerkkejä.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="tile">
+            <div class="tile__tag">Turnaus</div>
+            <h3>Seuraava turnaus</h3>
+            <p>Päivämäärä, paikka ja ilmoittautuminen selkeästi yhdessä nostossa.</p>
+            <a class="link" href="turnaukset.html">Lisätiedot →</a>
+          </article>
+
+          <article class="tile">
+            <div class="tile__tag">Kerhotoiminta</div>
+            <h3>Viikkokerhot</h3>
+            <p>Kenelle kerhot sopivat ja missä/ milloin pelataan.</p>
+            <a class="link" href="kerhot.html">Katso kerhot →</a>
+          </article>
+
+          <article class="tile">
+            <div class="tile__tag">Uutinen</div>
+            <h3>Uusin tiedote</h3>
+            <p>Lyhyt uutisnosto. Pidempi teksti omalle sivulle/arkistoon.</p>
+            <a class="link" href="uutiset.html">Uutisarkisto →</a>
+          </article>
+        </div>
+
+        <div class="events" aria-label="Tulevat tapahtumat">
+          <div class="events__head">
+            <h3>Tulevat tapahtumat (esimerkki)</h3>
+            <a class="link" href="turnaukset.html">Kaikki tapahtumat →</a>
+          </div>
+          <div class="events__list">
+            <div class="events__row">
+              <div class="events__date">Ti</div>
+              <div class="events__main">
+                <div class="events__title">Kerhoilta</div>
+                <div class="events__meta">18:00–20:00 • Pelipaikka (esim.)</div>
+              </div>
+              <a class="events__cta" href="kerhot.html">Avaa</a>
+            </div>
+            <div class="events__row">
+              <div class="events__date">To</div>
+              <div class="events__main">
+                <div class="events__title">Nuorten kerho</div>
+                <div class="events__meta">17:00–18:30 • Pelipaikka (esim.)</div>
+              </div>
+              <a class="events__cta" href="kerhot.html">Avaa</a>
+            </div>
+            <div class="events__row">
+              <div class="events__date">La</div>
+              <div class="events__main">
+                <div class="events__title">Kuukausiturnaus</div>
+                <div class="events__meta">10:00–16:00 • Ilmoittautuminen (esim.)</div>
+              </div>
+              <a class="events__cta" href="turnaukset.html">Avaa</a>
+            </div>
+          </div>
+          <div class="events__note">Tämä tapahtumalista on luonnoksessa vain esimerkkirakenne.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="wrap footer__inner">
+        <div class="footer__brand">
+          <strong>Jyväs-Shakki</strong>
+          <div class="footer__muted">Etusivun luonnos (tiivistetty) • 2026</div>
+
+        </div>
+        <div class="footer__links">
+          <a href="#ajankohtaista">Ajankohtaista</a>
+          <a href="kerhot.html">Kerhot</a>
+          <a href="turnaukset.html">Turnaukset</a>
+          <a href="uutiset.html">Uutiset</a>
+          <a href="yhteystiedot.html">Yhteystiedot</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const btn = document.querySelector('.menuBtn');
+    const menu = document.querySelector('#mobileMenu');
+
+    function closeMenu(){
+      btn?.setAttribute('aria-expanded', 'false');
+      if (menu) menu.hidden = true;
+    }
+
+    btn?.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (expanded) {
+        menu.hidden = true;
+      } else {
+        menu.hidden = false;
+      }
+    });
+
+    // close menu on link click
+    menu?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => closeMenu());
+    });
+
+    // close on outside click (mobile quality-of-life)
+    document.addEventListener('click', (e) => {
+      if (!btn || !menu) return;
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      if (!expanded) return;
+      const t = e.target;
+      if (t instanceof Node && (btn.contains(t) || menu.contains(t))) return;
+      closeMenu();
+    });
+
+    // close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  </script>
+</body>
+</html>
