@@ -59,35 +59,35 @@
       <div class="wrap">
         <div class="sectionHead">
           <h2>Ajankohtaista</h2>
-          <p>Pikalinkit tärkeimpiin sivuihin + alla seuraavaksi tulossa olevat tapahtumat.</p>
+          <p>Nopeat nostot tärkeimpiin asioihin. Tässä luonnoksessa tekstit ovat esimerkkejä.</p>
         </div>
 
         <div class="grid3">
           <article class="tile">
-            <div class="tile__tag">Pikalinkki</div>
-            <h3>Kaikki turnaukset</h3>
-            <p>Katso tulevat turnaukset, ilmoittautumisohjeet ja kilpailukalenteri.</p>
-            <a class="link" href="turnaukset.html">Avaa turnaukset →</a>
+            <div class="tile__tag">Turnaus</div>
+            <h3>Seuraava turnaus</h3>
+            <p>Päivämäärä, paikka ja ilmoittautuminen selkeästi yhdessä nostossa.</p>
+            <a class="link" href="turnaukset.html">Lisätiedot →</a>
           </article>
 
           <article class="tile">
-            <div class="tile__tag">Pikalinkki</div>
-            <h3>Kerhoajat &amp; paikat</h3>
-            <p>Ajat, pelipaikka ja info ensikertalaisille sekä junioreille.</p>
-            <a class="link" href="kerhot.html">Avaa kerhot →</a>
+            <div class="tile__tag">Kerhotoiminta</div>
+            <h3>Viikkokerhot</h3>
+            <p>Kenelle kerhot sopivat ja missä/ milloin pelataan.</p>
+            <a class="link" href="kerhot.html">Katso kerhot →</a>
           </article>
 
           <article class="tile">
-            <div class="tile__tag">Pikalinkki</div>
-            <h3>Uutiset &amp; tulokset</h3>
-            <p>Viimeisimmät tiedotteet, tulokset ja otteluraportit yhdessä paikassa.</p>
-            <a class="link" href="uutiset.html">Avaa uutiset →</a>
+            <div class="tile__tag">Uutinen</div>
+            <h3>Uusin tiedote</h3>
+            <p>Lyhyt uutisnosto. Pidempi teksti omalle sivulle/arkistoon.</p>
+            <a class="link" href="uutiset.html">Uutisarkisto →</a>
           </article>
         </div>
 
         <div class="events" aria-label="Tulevat tapahtumat">
           <div class="events__head">
-            <h3>Seuraavaksi tulossa (esimerkki)</h3>
+            <h3>Tulevat tapahtumat (esimerkki)</h3>
             <a class="link" href="turnaukset.html">Kaikki tapahtumat →</a>
           </div>
           <div class="events__list">
@@ -99,7 +99,6 @@
               </div>
               <a class="events__cta" href="kerhot.html">Avaa</a>
             </div>
-
             <div class="events__row">
               <div class="events__date">To</div>
               <div class="events__main">
@@ -108,7 +107,6 @@
               </div>
               <a class="events__cta" href="kerhot.html">Avaa</a>
             </div>
-
             <div class="events__row">
               <div class="events__date">La</div>
               <div class="events__main">
@@ -118,7 +116,7 @@
               <a class="events__cta" href="turnaukset.html">Avaa</a>
             </div>
           </div>
-          <div class="events__note">Tämä lista näyttää seuraavat tapahtumat. Yläpuolen kortit ovat pikalinkkejä.</div>
+          <div class="events__note">Tämä tapahtumalista on luonnoksessa vain esimerkkirakenne.</div>
         </div>
       </div>
     </section>
@@ -126,13 +124,11 @@
     <footer class="footer" aria-label="Alatunniste">
       <div class="wrap footer__inner">
         <div class="footer__brand">
-          <strong>Jyväskylän Shakki ry</strong>
-          <div class="footer__muted">Sähköposti: <a class="link" href="mailto:INFO@ESIMERKKI.FI">INFO@ESIMERKKI.FI</a></div>
+          <strong>Jyväs-Shakki</strong>
+          <div class="footer__muted">Etusivun luonnos (tiivistetty) • 2026</div>
 
-          <div class="footer__muted">© <span id="year"></span> Jyväskylän Shakki ry</div>
         </div>
-
-        <div class="footer__links" aria-label="Linkit">
+        <div class="footer__links">
           <a href="#ajankohtaista">Ajankohtaista</a>
           <a href="kerhot.html">Kerhot</a>
           <a href="turnaukset.html">Turnaukset</a>
@@ -144,10 +140,6 @@
   </main>
 
   <script>
-    // footer year
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
     const btn = document.querySelector('.menuBtn');
     const menu = document.querySelector('#mobileMenu');
 
