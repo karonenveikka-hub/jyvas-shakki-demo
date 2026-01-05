@@ -99,6 +99,7 @@
               </div>
               <a class="events__cta" href="kerhot.html">Avaa</a>
             </div>
+
             <div class="events__row">
               <div class="events__date">To</div>
               <div class="events__main">
@@ -107,6 +108,7 @@
               </div>
               <a class="events__cta" href="kerhot.html">Avaa</a>
             </div>
+
             <div class="events__row">
               <div class="events__date">La</div>
               <div class="events__main">
@@ -124,11 +126,13 @@
     <footer class="footer" aria-label="Alatunniste">
       <div class="wrap footer__inner">
         <div class="footer__brand">
-          <strong>Jyväs-Shakki</strong>
-          <div class="footer__muted">Etusivun luonnos (tiivistetty) • 2026</div>
+          <strong>Jyväskylän Shakki ry</strong>
+          <div class="footer__muted">Sähköposti: <a class="link" href="mailto:INFO@ESIMERKKI.FI">INFO@ESIMERKKI.FI</a></div>
 
+          <div class="footer__muted">© <span id="year"></span> Jyväskylän Shakki ry</div>
         </div>
-        <div class="footer__links">
+
+        <div class="footer__links" aria-label="Linkit">
           <a href="#ajankohtaista">Ajankohtaista</a>
           <a href="kerhot.html">Kerhot</a>
           <a href="turnaukset.html">Turnaukset</a>
@@ -140,6 +144,10 @@
   </main>
 
   <script>
+    // footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
     const btn = document.querySelector('.menuBtn');
     const menu = document.querySelector('#mobileMenu');
 
